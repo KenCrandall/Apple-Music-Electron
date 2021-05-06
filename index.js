@@ -21,8 +21,8 @@ const forcedarkmode = false // NOTE: Really only useful for Linux machines that 
 function createWindow () {
   const win = new BrowserWindow({
     icon: path.join(__dirname, './assets/icon.png'),
-//    width: 1024,
-//    height: 600,
+    width: 1185,
+    height: 1050,
     minWidth: 1000,
     minHeight: 800,
 //    frame: false,
