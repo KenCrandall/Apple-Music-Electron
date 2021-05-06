@@ -9,11 +9,11 @@ let isQuiting
 let isMaximized
 
 // Optional Features
-const customtitlebar = true // NOTE: Enables a custom macOS-isk titlebar instead of your respected platforms titlebars. Enable frame manually if disabled. (true by default)
-const discordrpc = true // NOTE: Removes all Discord RPC when disabled. (true by default)
+const customtitlebar = false // NOTE: Enables a custom macOS-isk titlebar instead of your respected platforms titlebars. Enable frame manually if disabled. (true by default)
+const discordrpc = false // NOTE: Removes all Discord RPC when disabled. (true by default)
 const showalbum = true // NOTE: Removes Album Name from Discord RPC when disabled (true by default)
 const sitedetection = false // NOTE: Checks sites on startup if online when enabled. (false by default. can slow down start up performance)
-const showscrollbars = false // NOTE: Shows scrollbars on page when enabled. (false by default)
+const showscrollbars = true // NOTE: Shows scrollbars on page when enabled. (false by default)
 const removeapplelogo = true // NOTE: Removes Apple Logo when enabled. (true by default)
 const forcedarkmode = false // NOTE: Really only useful for Linux machines that don't support css dark mode. (false by default)
 // For those not familiar with javascript in anyway shape or form just change things from false to true or vice versa. Compile accordingly.
@@ -21,11 +21,12 @@ const forcedarkmode = false // NOTE: Really only useful for Linux machines that 
 function createWindow () {
   const win = new BrowserWindow({
     icon: path.join(__dirname, './assets/icon.png'),
-    width: 1024,
-    height: 600,
-    minWidth: 300,
-    minHeight: 300,
-    frame: false,
+//    width: 1024,
+//    height: 600,
+    minWidth: 1000,
+    minHeight: 800,
+//    frame: false,
+    frame: true,
     title: "Apple Music",
     // Enables DRM
     webPreferences: {
