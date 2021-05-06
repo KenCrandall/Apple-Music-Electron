@@ -43,12 +43,7 @@
       "assets/icon.*"
     ],
     "linux": {
-      "target": [
-        "AppImage",
-        "deb",
-        "snap",
-        "rpm"
-      ],
+      "target": "AppImage",
       "category": "AudioVideo",
       "icon": "./assets/icon.icns"
     },
